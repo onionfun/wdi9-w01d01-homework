@@ -1,0 +1,98 @@
+Deirdres-MacBook-Air:homework deirdre$ git clone https://github.com/onionfun/wdi9-w01d01-homework.git
+Cloning into 'wdi9-w01d01-homework'...
+remote: Counting objects: 3, done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 3 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+Deirdres-MacBook-Air:homework deirdre$ ls
+wdi9-w01d01-homework
+Deirdres-MacBook-Air:homework deirdre$ touch commands.txt
+Deirdres-MacBook-Air:homework deirdre$ mkdir homework-pt-1
+Deirdres-MacBook-Air:homework deirdre$ mv commands.txt homework-pt-1
+Deirdres-MacBook-Air:homework deirdre$ ls
+homework-pt-1		wdi9-w01d01-homework
+Deirdres-MacBook-Air:homework deirdre$ cd homework-pt-1
+Deirdres-MacBook-Air:homework-pt-1 deirdre$ ls
+commands.txt
+Deirdres-MacBook-Air:homework-pt-1 deirdre$ ls
+commands.txt
+Deirdres-MacBook-Air:homework-pt-1 deirdre$ mkdir death-star
+Deirdres-MacBook-Air:homework-pt-1 deirdre$ touch death-star/ princess-leia.txt storm-trooper.txt darth-vader.txt
+Deirdres-MacBook-Air:homework-pt-1 deirdre$ ls
+commands.txt		death-star		storm-trooper.txt
+darth-vader.txt		princess-leia.txt
+Deirdres-MacBook-Air:homework-pt-1 deirdre$ mv storm-trooper.txt death-star
+Deirdres-MacBook-Air:homework-pt-1 deirdre$ ls
+commands.txt		death-star
+darth-vader.txt		princess-leia.txt
+Deirdres-MacBook-Air:homework-pt-1 deirdre$ mv princess-leia.txt death-star
+Deirdres-MacBook-Air:homework-pt-1 deirdre$ mv darth-vader death-star
+mv: rename darth-vader to death-star/darth-vader: No such file or directory
+Deirdres-MacBook-Air:homework-pt-1 deirdre$ ls
+commands.txt	darth-vader.txt	death-star
+Deirdres-MacBook-Air:homework-pt-1 deirdre$ mv darth-vader.txt death-star
+Deirdres-MacBook-Air:homework-pt-1 deirdre$ ls
+commands.txt	death-star
+Deirdres-MacBook-Air:homework-pt-1 deirdre$ cd death-star
+Deirdres-MacBook-Air:death-star deirdre$ ls
+darth-vader.txt		princess-leia.txt	storm-trooper.txt
+Deirdres-MacBook-Air:death-star deirdre$ 
+Deirdres-MacBook-Air:death-star deirdre$ cd ..
+Deirdres-MacBook-Air:homework-pt-1 deirdre$ ls
+commands.txt	death-star
+Deirdres-MacBook-Air:homework-pt-1 deirdre$ mkdir galaxy-far-away
+Deirdres-MacBook-Air:homework-pt-1 deirdre$ touch galaxy-far-away/ ben-kenobi.txt
+Deirdres-MacBook-Air:homework-pt-1 deirdre$ touch galaxy-far-away/ luke.txt
+Deirdres-MacBook-Air:homework-pt-1 deirdre$ mkdir tatooine
+Deirdres-MacBook-Air:homework-pt-1 deirdre$ mkdir tatooin/ millenium-falcon
+Deirdres-MacBook-Air:homework-pt-1 deirdre$ ls
+ben-kenobi.txt		galaxy-far-away		tatooin
+commands.txt		luke.txt		tatooine
+death-star		millenium-falcon
+Deirdres-MacBook-Air:homework-pt-1 deirdre$ rm -r tatooin
+Deirdres-MacBook-Air:homework-pt-1 deirdre$ rm -r millenium-falcon
+Deirdres-MacBook-Air:homework-pt-1 deirdre$ cd tatooine
+Deirdres-MacBook-Air:tatooine deirdre$ cd ..
+Deirdres-MacBook-Air:homework-pt-1 deirdre$ ls
+ben-kenobi.txt	death-star	luke.txt
+commands.txt	galaxy-far-away	tatooine
+Deirdres-MacBook-Air:homework-pt-1 deirdre$ cd tatooine
+Deirdres-MacBook-Air:tatooine deirdre$ mkdir millenium_falcon
+Deirdres-MacBook-Air:tatooine deirdre$ cd millenium_falcon
+Deirdres-MacBook-Air:millenium_falcon deirdre$ touch han-solo.txt chewbacca.txt
+Deirdres-MacBook-Air:millenium_falcon deirdre$ ls
+chewbacca.txt	han-solo.txt
+Deirdres-MacBook-Air:millenium_falcon deirdre$ cd ..
+Deirdres-MacBook-Air:tatooine deirdre$ cd ..
+Deirdres-MacBook-Air:homework-pt-1 deirdre$ ls
+ben-kenobi.txt	death-star	luke.txt
+commands.txt	galaxy-far-away	tatooine
+Deirdres-MacBook-Air:homework-pt-1 deirdre$ cd galaxy-far-away/
+Deirdres-MacBook-Air:galaxy-far-away deirdre$ cd ..
+Deirdres-MacBook-Air:homework-pt-1 deirdre$ mv ben-kenobi.txt obi-wan.txt
+Deirdres-MacBook-Air:homework-pt-1 deirdre$ 
+Deirdres-MacBook-Air:homework-pt-1 deirdre$ ls
+commands.txt	galaxy-far-away	obi-wan.txt
+death-star	luke.txt	tatooine
+Deirdres-MacBook-Air:homework-pt-1 deirdre$ ls
+commands.txt	galaxy-far-away	obi-wan.txt
+death-star	luke.txt	tatooine
+Deirdres-MacBook-Air:homework-pt-1 deirdre$ mv obi-wan.txt/ galaxy-far-away
+mv: rename obi-wan.txt/ to galaxy-far-away/obi-wan.txt/: Not a directory
+Deirdres-MacBook-Air:homework-pt-1 deirdre$ mv --help
+mv: illegal option -- -
+usage: mv [-f | -i | -n] [-v] source target
+       mv [-f | -i | -n] [-v] source ... directory
+Deirdres-MacBook-Air:homework-pt-1 deirdre$ mv obi-wan.txt galaxy-far-away/
+Deirdres-MacBook-Air:homework-pt-1 deirdre$ mv luke.txt galaxy-far-away/
+Deirdres-MacBook-Air:homework-pt-1 deirdre$ ls
+commands.txt	death-star	galaxy-far-away	tatooine
+Deirdres-MacBook-Air:homework-pt-1 deirdre$ cd galaxy-far-away
+Deirdres-MacBook-Air:galaxy-far-away deirdre$ ls
+luke.txt	obi-wan.txt
+Deirdres-MacBook-Air:galaxy-far-away deirdre$ cd ..
+Deirdres-MacBook-Air:homework-pt-1 deirdre$ ls
+commands.txt	death-star	galaxy-far-away	tatooine
+Deirdres-MacBook-Air:homework-pt-1 deirdre$ cd death-star
+Deirdres-MacBook-Air:death-star deirdre$ cp storm-trooper.txt tatooine
+Deirdres-MacBook-Air:death-star deirdre$ 
