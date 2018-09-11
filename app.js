@@ -8,9 +8,8 @@
  the variable will be redefined (cannot be redefinied but the contents or values of it can change)(can't 
  change what the data type is but can manipulate the data) and when you get the error, change it to let, which is
  a variable that can be redefined, most commonly used in loops.
- 5.Unix question: What is a "parent" directory? The directory that houses another directory
-6. Unix, again: If you're not sure about how to use a Unix command, how can you get more info without being connected to the internet?
- 7. hitting tab so that what you're typing auto completes
+ 5.Unix question: What is a "parent" directory? The directory that houses another directory or directories
+6. Using the "man" command
 */
 
 /*
@@ -23,13 +22,13 @@ Test your answers by using console.log in front of each expression in your answe
   const c = 57;
   const d = 16;
   const e = 'Kevin';
-a < b;
-c > d;
-'Name' === 'Name';
-a < b < c;
-a === a < d;
-e == 'Kevin';
-48 == '48';
+console.log(a < b);
+console.log(c > d);
+console.log('Name' === 'Name');
+console.log(a < b < c);
+console.log(a * a == d);
+console.log(e == 'Kevin');
+console.log(48 == '48');
 */
 
 /* Part 3 WHILE LOOPS
